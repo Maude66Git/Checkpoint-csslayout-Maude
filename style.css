@@ -664,6 +664,7 @@ svg:not(:root) {
 .offices__slider .office {
     width: 33.33%;
     float:left;
+    margin-bottom: 20px;
 }
 
 .office__inner {
@@ -676,7 +677,15 @@ svg:not(:root) {
     position: relative;
     display: block;
     color: #747474;
+    box-shadow: 0 5px 10px 0 transparent;
+    transition: box-shadow .2s ease 0s;
 }
+
+.office__inner:hover {
+    box-shadow: 0 5px 10px 0 #333;
+    transition: box-shadow .2s ease 0s;
+}
+
 
 figure {
     margin: 0;
@@ -733,7 +742,7 @@ a:-webkit-any-link {
     transition: all .2s ease 0s;
 }
 
-/*BLOCK 6> Office section*/
+/*BLOCK 6> Join-us section*/
 
 .join-us {
     margin: 5rem auto;
